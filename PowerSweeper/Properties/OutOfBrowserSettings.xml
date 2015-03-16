@@ -1,0 +1,12 @@
+<OutOfBrowserSettings ShortName="Power Sweeper Application" EnableGPUAcceleration="False" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>Power Sweeper Application.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="PowerSweeper Application" Height="600" Width="800" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Images/ps 16.png</Icon>
+    <Icon Size="32,32">Images/ps 32.png</Icon>
+    <Icon Size="48,48">Images/ps 48.png</Icon>
+    <Icon Size="128,128">Images/ps 128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="PowerSweeper.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" SizeChanged="UserControl_SizeChanged">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/menu.png"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".8*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" x:Name="stackMenu" >
+            <TextBlock x:Name="tbNewGame" Text="New Game"   FontSize="30" HorizontalAlignment="Center" Foreground="#FF1D1AF9"  FontWeight="Bold" MouseEnter="tb_MouseEnter" MouseLeave="tb_MouseLeave" MouseLeftButtonUp="tbNewGame_MouseLeftButtonUp" FontFamily="Fonts/AGENTORANGE.TTF#AGENT ORANGE" Cursor="Hand"  ></TextBlock>
+            <TextBlock x:Name="tbHighScores" Text="High Scores"  FontSize="30" HorizontalAlignment="Center" Foreground="#FF1D1AF9" FontWeight="Bold" Margin="0,10,0,0"  MouseEnter="tb_MouseEnter" MouseLeave="tb_MouseLeave" MouseLeftButtonUp="tbHighScores_MouseLeftButtonUp"  FontFamily="Fonts/AGENTORANGE.TTF#AGENT ORANGE"  Cursor="Hand" ></TextBlock>
+            <TextBlock x:Name="tbInstall" Text="Install"  FontSize="30" HorizontalAlignment="Center" Foreground="#FF1D1AF9" FontWeight="Bold" Margin="0,10,0,0"  MouseEnter="tb_MouseEnter" MouseLeave="tb_MouseLeave" MouseLeftButtonUp="tbInstall_MouseLeftButtonUp"  FontFamily="Fonts/AGENTORANGE.TTF#AGENT ORANGE"  Cursor="Hand" ></TextBlock>
+            <TextBlock x:Name="tbInstructions" Text="Instructions"  FontSize="30" HorizontalAlignment="Center" Foreground="#FF1D1AF9" FontWeight="Bold" Margin="0,10,0,0"  MouseEnter="tb_MouseEnter" MouseLeave="tb_MouseLeave" MouseLeftButtonUp="tbInstructions_MouseLeftButtonUp"  FontFamily="Fonts/AGENTORANGE.TTF#AGENT ORANGE"  Cursor="Hand" ></TextBlock>
+            <TextBlock x:Name="tbCredits" Text="Credits"  FontSize="30" HorizontalAlignment="Center" Foreground="#FF1D1AF9" FontWeight="Bold" Margin="0,10,0,0"  MouseEnter="tb_MouseEnter" MouseLeave="tb_MouseLeave" MouseLeftButtonUp="tbCredits_MouseLeftButtonUp"  FontFamily="Fonts/AGENTORANGE.TTF#AGENT ORANGE"  Cursor="Hand" ></TextBlock>
+            <StackPanel.Projection>
+                <PlaneProjection RotationX="-45" GlobalOffsetZ="190"></PlaneProjection>
+            </StackPanel.Projection>
+        </StackPanel>
+    </Grid>
+</UserControl>

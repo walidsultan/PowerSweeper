@@ -1,0 +1,15 @@
+﻿<UserControl xmlns:my="clr-namespace:PowerSweeper.Classes"  x:Class="PowerSweeper.Controls.LevelBlock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" Width="32" Height="32">
+    <Border BorderBrush="White"  BorderThickness="2">
+        <Grid x:Name="LayoutRoot" Background="LightGray"       >
+            <my:MineButton x:Name="btnBlock" Width="auto" Height="auto" Visibility="Visible"  Click="btnBlock_Click"   FontSize="1"  Foreground="Blue" MouseRightButtonUp="btnBlock_MouseRightButtonUp" IsTabStop="False" Background="LightGray"   />
+            <Image x:Name="imgMine" Width="auto" Height="auto" Visibility="Collapsed" MouseRightButtonUp="imgMine_MouseRightButtonUp" MouseLeftButtonDown="imgMine_MouseLeftButtonDown"  ></Image>
+        </Grid>
+    </Border>
+
+</UserControl>
